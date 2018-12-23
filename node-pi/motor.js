@@ -4,19 +4,28 @@ const ma = new gpio(22, 'out');
 const pwma = new gpio(17, 'out');
 const mb = new gpio(27, 'out');
 //const pwmb = new gpio(22, 'out');
+let obstructed = false;
 
 //pwma.writeSync(1)
+
+exports.setObstructed = function(value) {
+  obstructed = value;
+}
 
 function logSignals() {
   console.log(`pwma = ${pwma.readSync()}, ma == ${ma.readSync()}, mb == ${mb.readSync()}`);
 }
 
 exports.forward = function() {
-  pwma.writeSync(1);
-  //pwmb.writeSync(1);
-  ma.writeSync(1);
-  mb.writeSync(1);
-  logSignals();
+  if (!obstructed) {
+    pwma.writeSync(1);
+    //pwmb.writeSync(1);
+    ma.writeSync(1);
+    mb.writeSync(1);
+    logSignals();
+  } else {
+    pwma.writeSync(0);
+  }
 }
 
 exports.reverse = function() {

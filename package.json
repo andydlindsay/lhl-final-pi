@@ -18,6 +18,7 @@
     "raspi-live": "^2.0.0",
     "raspi-pwm": "^6.0.0",
     "raspivid-stream": "^0.2.1",
-    "rpio": "^1.0.11"
+    "rpio": "^1.0.11",
+    "socket.io-client": "^2.2.0"
   }
 }

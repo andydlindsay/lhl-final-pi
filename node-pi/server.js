@@ -1,6 +1,6 @@
 //const camera = require('./camera');
 //const ss = require('socket.io-stream');
-//const spawn = require('child_process').spawn;
+const spawn = require('child_process').spawn;
 const motor = require('./motor.js');
 const five = require('johnny-five');
 const PiIO = require('pi-io');
@@ -9,6 +9,7 @@ const PiIO = require('pi-io');
 const socket = require('socket.io-client')('ws://rpi-lhl-final.herokuapp.com');
 //const stream  = ss.createStream();
 //const child = spawn('/opt/vc/bin/raspivid', ['-hf', '-w', '1920', '-h', '1080', '-t', '0', '-fps', '24', '-b', '5000000', '-o', '-']);
+const child = spawn('python3', ['camera.py']);
 
 socket.on('connect', () => {
     console.log('Connected web server');

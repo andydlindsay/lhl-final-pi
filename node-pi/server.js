@@ -78,7 +78,7 @@ board.on('ready', () => {
     echoPin: 'GPIO24'
   });
   proximity.on('change', function() {
-    console.log(`cm: ${this.cm} && prev check: ${previousCheck}`);
+   // console.log(`cm: ${this.cm} && prev check: ${previousCheck}`);
     if (this.cm <= 40 && previousCheck <= 40) {
       //canDrive = false;
       motor.setObstructed(true);

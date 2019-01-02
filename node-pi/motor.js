@@ -3,7 +3,7 @@ const gpio = require('onoff').Gpio;
 const ma = new gpio(22, 'out');
 const pwma = new gpio(17, 'out');
 const mb = new gpio(27, 'out');
-const pwmb = new gpio(22, 'out');
+const pwmb = new gpio(25, 'out');
 let obstructed = false;
 
 //pwma.writeSync(1)
@@ -57,18 +57,20 @@ exports.forwardRight = function() {
   pwmb.writeSync(1);
   setInterval(() => {
     pwma.writeSync(!pwmb.readSync);
-  }, 50);
+  }, 1000);
   ma.writeSync(1);
   mb.writeSync(1);
+  logSignals();
 }
 
 exports.forwardLeft = function() {
   pwma.writeSync(1);
   setInterval(() => {
     pwmb.writeSync(!pwmb.readSync);
-  }, 50);
+  }, 1000);
   ma.writeSync(1);
   mb.writeSync(1);
+  logSignals();
 }
 
 exports.stop = function() {

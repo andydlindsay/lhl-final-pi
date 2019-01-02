@@ -14,6 +14,7 @@
     "onoff": "^3.2.2",
     "pi-camera": "^1.2.1",
     "pi-io": "^0.5.1",
+    "raspberry-pi-camera-native": "0.0.0",
     "raspi-io": "^9.0.1",
     "raspi-live": "^2.0.0",
     "raspi-pwm": "^6.0.0",

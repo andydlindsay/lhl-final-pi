@@ -33,6 +33,9 @@ let playbackControls = [];
 let currentlyPlayingback = false;
 socket.on('playbackControls', (data) => {
   currentlyPlayingback = data.currentlyPlayingback;
+  if(currentlyPlayingback) {
+    motor.stop();
+  }
 });
 
 let currentlyRecording = false;
@@ -47,36 +50,19 @@ socket.on('controlRecording', (data) => {
 });
 
 socket.on('controlsOutput', (data) => {
-<<<<<<< HEAD
   console.log('Received controls');
   console.log(data);
+  if(!currentlyPlayingback) {
   const controls = data;
 
   if (currentlyRecording) {
     playbackControls.push({
-      controls: data,
-      timeout: new Date().getMilliseconds()
+      controls,
+      timeout: new Date().getTime()
     });
+    console.log(`array size = ${playbackControls.length}`);
   }
     
-  let direction = controls.direction;
-  let turn = controls.turn;
-  console.log(direction);
-  if(turn > 0) {
-    motor.right();
-  } else if (turn < 0) {
-    motor.left();
-  } else if (direction > 0) {
-    motor.forward();
-  } else if (direction < 0) {
-    motor.reverse();
-  } else {
-    motor.stop();
-  }
-=======
-    console.log('Received controls');
-    console.log(data);
-    const controls = data;
     let direction = controls.direction;
     let turn = controls.turn;
     console.log(direction);
@@ -97,7 +83,7 @@ socket.on('controlsOutput', (data) => {
      } else {
        motor.stop();
      }
->>>>>>> 67267b84ecd9b25d30c010bc1a99eaec32c39a0a
+  }
 });
 
 raspberryPiCamera.on('frame', (data) => {

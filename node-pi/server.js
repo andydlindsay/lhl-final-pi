@@ -28,7 +28,52 @@ socket.on('disconnect', () => {
 //ss(socket).emit('videoStream', stream);
 //video.pipe(stream);
 
+// playback controls
+let playbackControls = [];
+let currentlyPlayingback = false;
+socket.on('playbackControls', (data) => {
+  currentlyPlayingback = data.currentlyPlayingback;
+});
+
+let currentlyRecording = false;
+socket.on('controlRecording', (data) => {
+  currentlyRecording = data.currentlyRecording;
+  if (currentlyRecording) {
+    // begin with an empty array
+    playbackControls = [];
+  } else {
+    console.log(playbackControls);
+  }
+});
+
 socket.on('controlsOutput', (data) => {
+<<<<<<< HEAD
+  console.log('Received controls');
+  console.log(data);
+  const controls = data;
+
+  if (currentlyRecording) {
+    playbackControls.push({
+      controls: data,
+      timeout: new Date().getMilliseconds()
+    });
+  }
+    
+  let direction = controls.direction;
+  let turn = controls.turn;
+  console.log(direction);
+  if(turn > 0) {
+    motor.right();
+  } else if (turn < 0) {
+    motor.left();
+  } else if (direction > 0) {
+    motor.forward();
+  } else if (direction < 0) {
+    motor.reverse();
+  } else {
+    motor.stop();
+  }
+=======
     console.log('Received controls');
     console.log(data);
     const controls = data;
@@ -52,6 +97,7 @@ socket.on('controlsOutput', (data) => {
      } else {
        motor.stop();
      }
+>>>>>>> 67267b84ecd9b25d30c010bc1a99eaec32c39a0a
 });
 
 raspberryPiCamera.on('frame', (data) => {

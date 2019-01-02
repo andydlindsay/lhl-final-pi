@@ -47,6 +47,7 @@ socket.on('controlRecording', (data) => {
 });
 
 socket.on('controlsOutput', (data) => {
+<<<<<<< HEAD
   console.log('Received controls');
   console.log(data);
   const controls = data;
@@ -72,6 +73,31 @@ socket.on('controlsOutput', (data) => {
   } else {
     motor.stop();
   }
+=======
+    console.log('Received controls');
+    console.log(data);
+    const controls = data;
+    let direction = controls.direction;
+    let turn = controls.turn;
+    console.log(direction);
+    if(direction > 0 && turn > 0) {
+      motor.forwardRight();
+    } else if (direction > 0 && turn < 0){
+      motor.forwardLeft();
+    } else if(turn > 0) {
+      motor.right();
+    } else if (turn < 0) {
+      motor.left();
+    } else if (direction > 0) {
+      //if (canDrive) {
+         motor.forward();
+      //}
+     } else if (direction < 0) {
+         motor.reverse();
+     } else {
+       motor.stop();
+     }
+>>>>>>> 67267b84ecd9b25d30c010bc1a99eaec32c39a0a
 });
 
 raspberryPiCamera.on('frame', (data) => {

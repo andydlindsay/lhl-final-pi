@@ -21,16 +21,15 @@ socket.on('playbackControls', (data) => {
   currentlyPlayingback = data.currentlyPlayingback;
   if (currentlyPlayingback) {
     motor.stop();
-    controlPlaybackReverse();
+    controlPlayback();
   }
 });
 
-function controlPlayback(playbackControls) {
+function controlPlayback() {
   playbackControls.forEach(({ controls, timeout }, index) => {
     setTimeout(() => {
       driveCar(controls);
       if (index === playbackControls.length - 1) {
-        console.log('done playback');
         stopPlayback();
       }
     }, timeout);
@@ -40,29 +39,25 @@ function controlPlayback(playbackControls) {
 function controlPlaybackReverse() {
   const length = playbackControls.length;
   const reversedControls = reverseControls(playbackControls);
-  console.log(reversedControls);
-  controlPlayback(reversedControls);
+  for(let i = 0; i < length; i++) {
+    setTimeout(() => {
+      driveCar(reversedControls(length - i));
+    }, );
+  }
 }
 
 function reverseControls(controls) {
   let reversed = [];
   controls = controls.reverse();
   for(let i = 0; i < controls.length; i++) {
-    console.log(controls[i]);
     reversed.push({ 
-      controls: {
-        direction: controls[i].controls.direction * -1,
-        turn: controls[i].controls.turn * -1,
-        cameraRotation: controls[i].controls.cameraRotation * -1
-      },
-      timeout: i > 0 ? reversed[i-1].timeout + controls[i-1].timeout - controls[i].timeout : 0,
-    })
+      controls: controls[i].controls * -1,
+      timeout: controls[i-1] ? reversed[i-1] + controls[i].timeout - controls[i-1].timeout : 0,
+    )}
   }
-  return reversed;
 }
 
 function stopPlayback() {
-  motor.stop();
   currentlyPlayingback = false;
 }
 

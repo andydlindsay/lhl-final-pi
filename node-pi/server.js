@@ -63,6 +63,7 @@ function reverseControls(controls) {
 
 function stopPlayback() {
   motor.stop();
+  socket.emit('playbackComplete');
   currentlyPlayingback = false;
 }
 

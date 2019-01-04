@@ -12,6 +12,7 @@ socket.on('connect', () => {
 
 socket.on('disconnect', () => {
   console.log('Disconnected from web server');
+  motor.stop();
 })
 
 // playback controls
@@ -38,7 +39,6 @@ function controlPlayback(playbackControls) {
 }
 
 function controlPlaybackReverse() {
-  const length = playbackControls.length;
   const reversedControls = reverseControls(playbackControls);
   console.log(reversedControls);
   controlPlayback(reversedControls);

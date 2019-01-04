@@ -12,6 +12,7 @@ socket.on('connect', () => {
 
 socket.on('disconnect', () => {
   console.log('Disconnected from web server');
+  motor.stop();
 })
 
 // playback controls
@@ -38,7 +39,6 @@ function controlPlayback(playbackControls) {
 }
 
 function controlPlaybackReverse() {
-  const length = playbackControls.length;
   const reversedControls = reverseControls(playbackControls);
   console.log(reversedControls);
   controlPlayback(reversedControls);
@@ -97,11 +97,12 @@ socket.on('controlsOutput', (data) => {
 });
 
 function driveCar({ direction, turn }) {
-  if (direction > 0 && turn > 0) {
-    motor.forwardRight();
-  } else if (direction > 0 && turn < 0) {
-    motor.forwardLeft();
-  } else if (turn > 0) {
+  // if (direction > 0 && turn > 0) {
+  //   motor.forwardRight();
+  // } else if (direction > 0 && turn < 0) {
+  //   motor.forwardLeft();
+  // } else if (turn > 0) {
+  if (turn > 0) {
     motor.right();
   } else if (turn < 0) {
     motor.left();

@@ -46,6 +46,7 @@ function controlPlaybackReverse() {
 
 function reverseControls(controls) {
   let reversed = [];
+  console.log(controls);
   controls = controls.reverse();
   for(let i = 0; i < controls.length; i++) {
     console.log(controls[i]);
@@ -58,6 +59,7 @@ function reverseControls(controls) {
       timeout: i > 0 ? reversed[i-1].timeout + controls[i-1].timeout - controls[i].timeout : 0,
     })
   }
+  console.log(reversed);
   return reversed;
 }
 
@@ -98,11 +100,12 @@ socket.on('controlsOutput', (data) => {
 });
 
 function driveCar({ direction, turn }) {
-  if (direction > 0 && turn > 0) {
-    motor.forwardRight();
-  } else if (direction > 0 && turn < 0) {
-    motor.forwardLeft();
-  } else if (turn > 0) {
+  // if (direction > 0 && turn > 0) {
+  //   motor.forwardRight();
+  // } else if (direction > 0 && turn < 0) {
+  //   motor.forwardLeft();
+  // } else 
+  if (turn > 0) {
     motor.right();
   } else if (turn < 0) {
     motor.left();
@@ -120,8 +123,8 @@ raspberryPiCamera.on('frame', (data) => {
 });
 
 const cameraOptions = {
-  width: 640,
-  height: 480,
+  width: 1920,
+  height: 1080,
   fps: 24,
   encoding: 'JPEG',
   quality: 10

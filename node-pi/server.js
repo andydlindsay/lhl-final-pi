@@ -20,16 +20,18 @@ let playbackControls = [];
 let currentlyPlayingback = false;
 socket.on('playbackControls', (data) => {
   currentlyPlayingback = data.currentlyPlayingback;
+  motor.stop();
   if (currentlyPlayingback) {
-    motor.stop();
-    controlPlaybackReverse();
+    controlPlayback(playbackControls);
   }
 });
 
 function controlPlayback(playbackControls) {
   playbackControls.forEach(({ controls, timeout }, index) => {
     setTimeout(() => {
-      driveCar(controls);
+      if (currentlyPlayingback) {
+        driveCar(controls);
+      }
       if (index === playbackControls.length - 1) {
         console.log('done playback');
         stopPlayback();
@@ -64,6 +66,7 @@ function reverseControls(controls) {
 function stopPlayback() {
   motor.stop();
   currentlyPlayingback = false;
+  socket.emit('playbackComplete');
 }
 
 let currentlyRecording = false;
@@ -138,7 +141,7 @@ board.on('ready', () => {
     echoPin: 'GPIO24'
   });
   proximity.on('change', function () {
-    if (this.cm <= 40 && previousCheck <= 40) {
+    if (this.cm <= 40 && previousCheck <= 40 && this.cm > 0) {
       motor.setObstructed(true);
     } else {
       motor.setObstructed(false);

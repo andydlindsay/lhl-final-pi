@@ -48,6 +48,7 @@ function controlPlaybackReverse() {
 
 function reverseControls(controls) {
   let reversed = [];
+  console.log(controls);
   controls = controls.reverse();
   for(let i = 0; i < controls.length; i++) {
     console.log(controls[i]);
@@ -60,11 +61,13 @@ function reverseControls(controls) {
       timeout: i > 0 ? reversed[i-1].timeout + controls[i-1].timeout - controls[i].timeout : 0,
     })
   }
+  console.log(reversed);
   return reversed;
 }
 
 function stopPlayback() {
   motor.stop();
+  socket.emit('playbackComplete');
   currentlyPlayingback = false;
   socket.emit('playbackComplete');
 }
@@ -104,7 +107,7 @@ function driveCar({ direction, turn }) {
   //   motor.forwardRight();
   // } else if (direction > 0 && turn < 0) {
   //   motor.forwardLeft();
-  // } else if (turn > 0) {
+  // } else 
   if (turn > 0) {
     motor.right();
   } else if (turn < 0) {
@@ -141,7 +144,7 @@ board.on('ready', () => {
     echoPin: 'GPIO24'
   });
   proximity.on('change', function () {
-    if (this.cm <= 40 && previousCheck <= 40 && this.cm > 0) {
+    if (this.cm <= 40 && previousCheck <= 40 && this.cm > 11) {
       motor.setObstructed(true);
     } else {
       motor.setObstructed(false);

@@ -123,8 +123,8 @@ raspberryPiCamera.on('frame', (data) => {
 });
 
 const cameraOptions = {
-  width: 1920,
-  height: 1080,
+  width: 640,
+  height: 480,
   fps: 24,
   encoding: 'JPEG',
   quality: 10
@@ -141,7 +141,7 @@ board.on('ready', () => {
     echoPin: 'GPIO24'
   });
   proximity.on('change', function () {
-    if (this.cm <= 40 && previousCheck <= 40) {
+    if (this.cm <= 40 && previousCheck <= 40 && this.cm > 11) {
       motor.setObstructed(true);
     } else {
       motor.setObstructed(false);

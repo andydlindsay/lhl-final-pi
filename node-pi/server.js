@@ -7,7 +7,7 @@ const socket = require('socket.io-client')('ws://rpi-lhl-final.herokuapp.com');
 
 socket.on('connect', () => {
   console.log('Connected web server');
-  socket.emit('carConnected', { carId: 1 });
+  socket.emit('identifier', 'car');
 })
 
 socket.on('disconnect', () => {

@@ -6,9 +6,7 @@ const mb = new gpio(27, 'out');
 const pwmb = new gpio(25, 'out');
 let obstructed = false;
 
-//pwma.writeSync(1)
-
-exports.setObstructed = function(value) {
+exports.setObstructed = function (value) {
   obstructed = value;
 }
 
@@ -16,64 +14,64 @@ function logSignals() {
   console.log(`pwma = ${pwma.readSync()}, pwmb = ${pwmb.readSync()}, ma = ${ma.readSync()}, mb = ${mb.readSync()}`);
 }
 
-exports.forward = function() {
+exports.forward = function () {
+  pwma.writeSync(1);
+  pwmb.writeSync(1);
+  ma.writeSync(1);
+  mb.writeSync(1);
+  // logSignals();
+}
+
+exports.reverse = function () {
   if (!obstructed) {
     pwma.writeSync(1);
     pwmb.writeSync(1);
-    ma.writeSync(1);
-    mb.writeSync(1);
-    logSignals();
+    ma.writeSync(0);
+    mb.writeSync(0);
+    // logSignals();
   } else {
     pwma.writeSync(0);
     pwmb.writeSync(0);
   }
 }
 
-exports.reverse = function() {
-  pwma.writeSync(1);
-  pwmb.writeSync(1);
-  ma.writeSync(0);
-  mb.writeSync(0);
-  logSignals();
-}
-
-exports.right = function() {
+exports.right = function () {
   pwma.writeSync(1);
   pwmb.writeSync(1);
   ma.writeSync(1);
   mb.writeSync(0);
-  logSignals();
+  // logSignals();
 }
 
-exports.left = function() {
+exports.left = function () {
   pwma.writeSync(1);
   pwmb.writeSync(1);
   ma.writeSync(0);
   mb.writeSync(1);
-  logSignals();
+  // logSignals();
 }
 
-exports.forwardRight = function() {
+exports.forwardRight = function () {
   pwmb.writeSync(1);
   setInterval(() => {
     pwma.writeSync(!pwmb.readSync);
   }, 1000);
   ma.writeSync(1);
   mb.writeSync(1);
-  logSignals();
+  // logSignals();
 }
 
-exports.forwardLeft = function() {
+exports.forwardLeft = function () {
   pwma.writeSync(1);
   setInterval(() => {
     pwmb.writeSync(!pwmb.readSync);
   }, 1000);
   ma.writeSync(1);
   mb.writeSync(1);
-  logSignals();
+  // logSignals();
 }
 
-exports.stop = function() {
+exports.stop = function () {
   pwma.writeSync(0);
   pwmb.writeSync(0);
   ma.writeSync(0);

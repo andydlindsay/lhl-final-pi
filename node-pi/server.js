@@ -2,6 +2,7 @@ const motor = require('./motor.js');
 const five = require('johnny-five');
 const PiIO = require('pi-io');
 const raspberryPiCamera = require('raspberry-pi-camera-native');
+const fs = require('fs');
 
 const socket = require('socket.io-client')('ws://rpi-lhl-final.herokuapp.com');
 
@@ -83,6 +84,11 @@ socket.on('controlRecording', (data) => {
     recordingStartTime = new Date().getTime();
   } else {
     console.log(`array size = ${playbackControls.length}`);
+    const fileName = new Date().getTime().toString() + '.txt';
+    fs.writeFileSync(fileName, playbackControls, (err) => {
+      if (err) throw err;
+      console.log(`${fileName} saved!`);
+    });
   }
 });
 
@@ -141,7 +147,7 @@ board.on('ready', () => {
   });
   proximity.on('change', function () {
     let obstructed = false;
-    if (this.cm <= 40 && previousCheck <= 40 && this.cm > 11) {
+    if (this.cm <= 40 && previousCheck <= 40 && previousCheck > 11 && this.cm > 11) {
       motor.setObstructed(true);
       obstructed = true;
     } else {

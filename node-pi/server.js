@@ -84,8 +84,8 @@ socket.on('controlRecording', (data) => {
     recordingStartTime = new Date().getTime();
   } else {
     console.log(`array size = ${playbackControls.length}`);
-    const fileName = new Date().getTime().toString() + '.txt';
-    fs.writeFileSync(fileName, playbackControls, (err) => {
+    const fileName = new Date().getTime().toString() + '.json';
+    fs.writeFileSync(fileName, JSON.stringify(playbackControls), (err) => {
       if (err) throw err;
       console.log(`${fileName} saved!`);
     });

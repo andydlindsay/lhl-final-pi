@@ -6,9 +6,20 @@ const fs = require('fs');
 
 let stdInBuffer = fs.readFileSync('./routes/figure-eight.json');
 const figureEight = JSON.parse(stdInBuffer);
-console.log(figureEight);
+stdInBuffer = fs.readFileSync('./routes/quadrilateral.json');
+const quadrilateral = JSON.parse(stdInBuffer);
+stdInBuffer = fs.readFileSync('./routes/square.json');
+const square = JSON.parse(stdInBuffer);
+stdInBuffer = fs.readFileSync('./routes/triangle.json');
+const triangle = JSON.parse(stdInBuffer);
 
-const routes = {};
+const routes = {
+  'Figure-Eight': figureEight,
+  'Quadrilateral': quadrilateral,
+  'Square': square,
+  'Triangle': triangle
+};
+const routesArray = Object.keys(routes);
 
 const socket = require('socket.io-client')('ws://rpi-lhl-final.herokuapp.com');
 
@@ -16,12 +27,22 @@ socket.on('connect', () => {
   console.log('Connected to socket server');
   socket.emit('identifier', 'car');
   socket.emit('carConnected', { carId: 1 });
+  socket.emit('routes', routesArray);
 })
 
 socket.on('disconnect', () => {
   console.log('Disconnected from web server');
   motor.stop();
 })
+
+socket.on('playbackRoute', (data) => {
+  const route = routes[data];
+  currentlyPlayingback = true;
+  motor.stop();
+  if (currentlyPlayingback) {
+    controlPlayback(route);
+  }
+});
 
 // playback controls
 let playbackControls = [];
@@ -90,11 +111,11 @@ socket.on('controlRecording', (data) => {
     recordingStartTime = new Date().getTime();
   } else {
     console.log(`array size = ${playbackControls.length}`);
-    const fileName = new Date().getTime().toString() + '.json';
-    fs.writeFileSync(fileName, JSON.stringify(playbackControls), (err) => {
-      if (err) throw err;
-      console.log(`${fileName} saved!`);
-    });
+    // const fileName = new Date().getTime().toString() + '.json';
+    // fs.writeFileSync(fileName, JSON.stringify(playbackControls), (err) => {
+    //   if (err) throw err;
+    //   console.log(`${fileName} saved!`);
+    // });
   }
 });
 

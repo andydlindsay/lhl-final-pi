@@ -4,6 +4,12 @@ const PiIO = require('pi-io');
 const raspberryPiCamera = require('raspberry-pi-camera-native');
 const fs = require('fs');
 
+let stdInBuffer = fs.readFileSync('./routes/figure-eight.json');
+const figureEight = JSON.parse(stdInBuffer);
+console.log(figureEight);
+
+const routes = {};
+
 const socket = require('socket.io-client')('ws://rpi-lhl-final.herokuapp.com');
 
 socket.on('connect', () => {

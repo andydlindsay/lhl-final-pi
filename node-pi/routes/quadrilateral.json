@@ -1,1 +1,986 @@
-[{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":59},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":135},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":234},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":335},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":434},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":537},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":640},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":748},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":842},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":946},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1098},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1176},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1263},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1349},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1453},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1542},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1636},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":1741},{"controls":{"direction":0.8,"turn":0,"cameraRotation":0},"timeout":1839},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":1946},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":2050},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":2144},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":2247},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":2365},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":2459},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":2536},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":2638},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":2756},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":2854},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":2966},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3063},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3135},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3234},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3334},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3433},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3540},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3650},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3743},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3848},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":3968},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":4057},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":4139},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":4234},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":4346},{"controls":{"direction":0,"turn":"-0.9","cameraRotation":0},"timeout":4446},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":4535},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":4640},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":4744},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":4848},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":4973},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5051},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5140},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5236},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5341},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5471},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5577},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5639},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5750},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5851},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":5952},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":6041},{"controls":{"direction":0.5,"turn":0,"cameraRotation":0},"timeout":6143},{"controls":{"direction":0,"turn":"-0.9","cameraRotation":0},"timeout":6244},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":6344},{"controls":{"direction":0,"turn":"-1.0","cameraRotation":0},"timeout":6442},{"controls":{"direction":0,"turn":"-0.9","cameraRotation":0},"timeout":6548},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":6698},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":6774},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":6836},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":6943},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7047},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7162},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7258},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7356},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7447},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7540},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7641},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7748},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7837},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":7969},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":8062},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":8145},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":8247},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":8358},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":8464},{"controls":{"direction":0,"turn":"0.9","cameraRotation":0},"timeout":8544},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":8648},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":8743},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":8835},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":8950},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":9047},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":9136},{"controls":{"direction":1,"turn":0,"cameraRotation":0},"timeout":9245},{"controls":{"direction":1,"turn":"0.7","cameraRotation":0},"timeout":9339},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":9449},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":9542},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":9639},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":9744},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":9835},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":9936},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":10055},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":10143},{"controls":{"direction":0,"turn":"1.0","cameraRotation":0},"timeout":10243},{"controls":{"direction":0,"turn":"0.9","cameraRotation":0},"timeout":10333},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":10440},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":10561},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":10659},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":10751},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":10845},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":10945},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11040},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11157},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11276},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11364},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11448},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11556},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11639},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11742},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11853},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":11950},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":12059},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":12172},{"controls":{"direction":0,"turn":0,"cameraRotation":0},"timeout":12255}]
+[
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 59
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 135
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 234
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 335
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 434
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 537
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 640
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 748
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 842
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 946
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1098
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1176
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1263
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1349
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1453
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1542
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1636
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1741
+    },
+    {
+        "controls": {
+            "direction": 0.8,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1839
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 1946
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 2050
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 2144
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 2247
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 2365
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 2459
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 2536
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 2638
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 2756
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 2854
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 2966
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3063
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3135
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3234
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3334
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3433
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3540
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3650
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3743
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3848
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 3968
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 4057
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 4139
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 4234
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 4346
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-0.9",
+            "cameraRotation": 0
+        },
+        "timeout": 4446
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 4535
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 4640
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 4744
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 4848
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 4973
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5051
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5140
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5236
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5341
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5471
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5577
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5639
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5750
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5851
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 5952
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 6041
+    },
+    {
+        "controls": {
+            "direction": 0.5,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 6143
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-0.9",
+            "cameraRotation": 0
+        },
+        "timeout": 6244
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 6344
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 6442
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "-0.9",
+            "cameraRotation": 0
+        },
+        "timeout": 6548
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 6698
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 6774
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 6836
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 6943
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7047
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7162
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7258
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7356
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7447
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7540
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7641
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7748
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7837
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 7969
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8062
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8145
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8247
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8358
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 8464
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "0.9",
+            "cameraRotation": 0
+        },
+        "timeout": 8544
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8648
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8743
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8835
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 8950
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 9047
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 9136
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 9245
+    },
+    {
+        "controls": {
+            "direction": 1,
+            "turn": "0.7",
+            "cameraRotation": 0
+        },
+        "timeout": 9339
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 9449
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 9542
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 9639
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 9744
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 9835
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 9936
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 10055
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 10143
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "1.0",
+            "cameraRotation": 0
+        },
+        "timeout": 10243
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": "0.9",
+            "cameraRotation": 0
+        },
+        "timeout": 10333
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 10440
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 10561
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 10659
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 10751
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 10845
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 10945
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11040
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11157
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11276
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11364
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11448
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11556
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11639
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11742
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11853
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 11950
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 12059
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 12172
+    },
+    {
+        "controls": {
+            "direction": 0,
+            "turn": 0,
+            "cameraRotation": 0
+        },
+        "timeout": 12255
+    }
+]
